@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Komal Mann - Professional Portfolio and Resume">
-    <title>Komal Mann | Professional Portfolio</title>
+    <meta name="description" content="Komal Mann, MBA - Healthcare Coordinator Portfolio">
+    <title>Komal Mann, MBA | Healthcare Coordinator</title>
     <style>
         /* UXR Optimized Color Palette & Typography */
         :root {
@@ -30,14 +30,13 @@
             padding: 0 20px;
         }
 
-        /* Container designed for optimal line-length (max 70 characters for readability) */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 60px 20px;
         }
 
-        /* Header / Hero Section - High Impact */
+        /* Header / Hero Section */
         header {
             border-bottom: 3px solid var(--blush-pink);
             padding-bottom: 30px;
@@ -47,7 +46,7 @@
         h1 {
             font-size: 3.5rem;
             color: var(--deep-maroon);
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             letter-spacing: -1px;
         }
 
@@ -55,7 +54,14 @@
             font-size: 1.5rem;
             color: var(--sunset-orange);
             font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            color: var(--dark-gray);
+            font-weight: 500;
             margin-bottom: 20px;
+            display: block;
         }
 
         .social-links {
@@ -92,7 +98,6 @@
             position: relative;
         }
 
-        /* Visual anchor for sections */
         h3::after {
             content: '';
             display: block;
@@ -108,8 +113,20 @@
             margin-bottom: 15px;
         }
 
-        /* Experience Items */
-        .experience-item {
+        /* Philosophy Blockquote */
+        blockquote {
+            background-color: #fff;
+            border-left: 4px solid var(--sunset-orange);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--deep-maroon);
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(59, 44, 37, 0.05);
+        }
+
+        /* List Items (Experience, Education) */
+        .list-item {
             background: #fff;
             padding: 25px;
             border-radius: 8px;
@@ -119,47 +136,27 @@
             transition: transform 0.2s ease;
         }
 
-        .experience-item:hover {
+        .list-item:hover {
             transform: translateX(5px);
             border-left-color: var(--sunset-orange);
         }
 
-        .job-title {
+        .item-title {
             font-weight: 700;
             font-size: 1.2rem;
             color: var(--earthy-brown);
         }
 
-        .company-name {
+        .item-subtitle {
             color: var(--sunset-orange);
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
-        .date-range {
+        .item-meta {
             font-size: 0.9rem;
             color: #888;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-
-        ul.achievements {
-            list-style-type: none;
-        }
-
-        ul.achievements li {
-            position: relative;
-            padding-left: 20px;
             margin-bottom: 10px;
-            color: var(--dark-gray);
-        }
-
-        ul.achievements li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--blush-pink);
-            font-weight: bold;
         }
 
         /* Footer */
@@ -169,6 +166,7 @@
             border-top: 1px solid #ddd;
             color: var(--dark-gray);
             font-size: 0.9rem;
+            margin-bottom: 40px;
         }
     </style>
 </head>
@@ -176,54 +174,76 @@
 
     <div class="container">
         <header>
-            <h1>Komal Mann</h1>
-            <h2>Creative Professional & Strategist</h2>
+            <h1>Komal Mann, MBA</h1>
+            <h2>Healthcare Coordinator</h2>
+            <span class="location">San Francisco Bay Area</span>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/komann/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
-                <a href="https://www.instagram.com/komallly/" target="_blank" rel="noopener noreferrer">View Instagram</a>
+                <a href="https://www.linkedin.com/in/komann/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/komallly/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
         </header>
 
         <section id="about">
-            <h3>Professional Summary</h3>
+            <h3>Professional Overview</h3>
             <p>
-                [Insert extracted bio from LinkedIn here. E.g., A dynamic professional with a proven track record in driving engagement and creating impactful solutions. Blending analytical rigor with creative vision to deliver outstanding results.]
+                Dedicated Healthcare Coordinator with a proven track record of optimizing operational efficiency and delivering quality patient care. Armed with an <strong>MBA and 5 years of experience</strong> in healthcare administration, I excel in strategic planning, team collaboration, and process improvement initiatives.
             </p>
+            <p>
+                Throughout my career, I've spearheaded initiatives to streamline workflows, enhance patient satisfaction, and maximize resource utilization. My comprehensive understanding of healthcare regulations, coupled with strong analytical skills, enables me to navigate complex challenges with confidence. I thrive in dynamic environments where innovation is encouraged and collaboration is key. Whether it's managing work queues, implementing new technologies, or fostering a culture of continuous improvement, I am committed to driving tangible results that positively impact both patients and stakeholders.
+            </p>
+            
+            <blockquote>
+                "I live by the golden rule, with a slight modification: Treat others how they wish to be treated. I use this rule to guide me through any experience, professional or otherwise. I am also committed to integrity; my walk walks louder than my talk talks. I am a knowledge-chaser. I embrace unfamiliarity and make an effort to learn more about things with which I am unfamiliar."
+            </blockquote>
         </section>
 
         <section id="experience">
             <h3>Experience</h3>
             
-            <div class="experience-item">
-                <div class="job-title">[Latest Job Title]</div>
-                <div class="company-name">[Company Name]</div>
-                <div class="date-range">[Start Date] – Present</div>
-                <ul class="achievements">
-                    <li>Led cross-functional initiatives to increase user engagement by X%.</li>
-                    <li>Designed and implemented strategic marketing campaigns resulting in Y.</li>
-                    <li>[Insert key achievements extracted from LinkedIn experience section]</li>
-                </ul>
+            <div class="list-item">
+                <div class="item-title">Practice Coordinator</div>
+                <div class="item-subtitle">University of California, San Francisco (UCSF)</div>
+                <div class="item-meta">Nov 2020 - Present • San Francisco, CA</div>
             </div>
 
-            <div class="experience-item">
-                <div class="job-title">[Previous Job Title]</div>
-                <div class="company-name">[Previous Company Name]</div>
-                <div class="date-range">[Start Date] – [End Date]</div>
-                <ul class="achievements">
-                    <li>Spearheaded project X which optimized internal workflows.</li>
-                    <li>Collaborated with design and development teams to launch Y.</li>
-                    <li>[Insert key achievements extracted from LinkedIn experience section]</li>
-                </ul>
+            <div class="list-item">
+                <div class="item-title">Marketing Intern</div>
+                <div class="item-subtitle">Gamree Group</div>
+                <div class="item-meta">Dec 2018 - Jan 2019 • Fremont, CA</div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-title">Learning Assistant</div>
+                <div class="item-subtitle">Chabot College</div>
+                <div class="item-meta">Jan 2018 - Jun 2018 • Hayward, CA</div>
             </div>
         </section>
 
-        <section id="portfolio">
-            <h3>Visual Narrative</h3>
-            <p>
-                <i>A curated glimpse into creative projects and personal branding, sourced from <a href="https://www.instagram.com/komallly/" style="color: var(--sunset-orange); text-decoration: none;">@komallly</a>.</i>
-            </p>
-            <div style="background: var(--blush-pink); padding: 20px; border-radius: 8px; text-align: center; color: var(--earthy-brown); font-weight: bold;">
-                [Instagram Grid / Visual Portfolio Placeholder]
+        <section id="education">
+            <h3>Education</h3>
+            
+            <div class="list-item">
+                <div class="item-title">Master of Business Administration (MBA)</div>
+                <div class="item-subtitle">University of San Francisco</div>
+                <div class="item-meta">Aug 2022 – Aug 2024</div>
+                <p style="font-size: 0.95rem; margin-top: 5px;">Business Administration and Management, General</p>
+            </div>
+
+            <div class="list-item">
+                <div class="item-title">Bachelor of Science (BS)</div>
+                <div class="item-subtitle">San Francisco State University</div>
+                <div class="item-meta">2018 – 2020</div>
+                <p style="font-size: 0.95rem; margin-top: 5px;">Business Administration and Management, General</p>
+            </div>
+        </section>
+
+        <section id="volunteering">
+            <h3>Volunteering</h3>
+            
+            <div class="list-item">
+                <div class="item-title">Volunteer</div>
+                <div class="item-subtitle">Masonic Home For Adults</div>
+                <div class="item-meta">May 2013 - May 2015</div>
             </div>
         </section>
 
