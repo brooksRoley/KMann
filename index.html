@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Komal Mann - Professional Portfolio and Resume">
+    <title>Komal Mann | Professional Portfolio</title>
+    <style>
+        /* UXR Optimized Color Palette & Typography */
+        :root {
+            --earthy-brown: #3b2c25;
+            --dark-gray: #4a4543;
+            --warm-gray: #f4f1ee;
+            --deep-maroon: #7c2a31;
+            --sunset-orange: #d96c4a;
+            --blush-pink: #e5989b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--warm-gray);
+            color: var(--earthy-brown);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Container designed for optimal line-length (max 70 characters for readability) */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Header / Hero Section - High Impact */
+        header {
+            border-bottom: 3px solid var(--blush-pink);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--deep-maroon);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--sunset-orange);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: var(--deep-maroon);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--sunset-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--deep-maroon);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* Visual anchor for sections */
+        h3::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: var(--sunset-orange);
+            margin-top: 8px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+        }
+
+        /* Experience Items */
+        .experience-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(59, 44, 37, 0.05);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--blush-pink);
+            transition: transform 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(5px);
+            border-left-color: var(--sunset-orange);
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--earthy-brown);
+        }
+
+        .company-name {
+            color: var(--sunset-orange);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .date-range {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        ul.achievements {
+            list-style-type: none;
+        }
+
+        ul.achievements li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+
+        ul.achievements li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--blush-pink);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #ddd;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Komal Mann</h1>
+            <h2>Creative Professional & Strategist</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/komann/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+                <a href="https://www.instagram.com/komallly/" target="_blank" rel="noopener noreferrer">View Instagram</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h3>Professional Summary</h3>
+            <p>
+                [Insert extracted bio from LinkedIn here. E.g., A dynamic professional with a proven track record in driving engagement and creating impactful solutions. Blending analytical rigor with creative vision to deliver outstanding results.]
+            </p>
+        </section>
+
+        <section id="experience">
+            <h3>Experience</h3>
+            
+            <div class="experience-item">
+                <div class="job-title">[Latest Job Title]</div>
+                <div class="company-name">[Company Name]</div>
+                <div class="date-range">[Start Date] – Present</div>
+                <ul class="achievements">
+                    <li>Led cross-functional initiatives to increase user engagement by X%.</li>
+                    <li>Designed and implemented strategic marketing campaigns resulting in Y.</li>
+                    <li>[Insert key achievements extracted from LinkedIn experience section]</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">[Previous Job Title]</div>
+                <div class="company-name">[Previous Company Name]</div>
+                <div class="date-range">[Start Date] – [End Date]</div>
+                <ul class="achievements">
+                    <li>Spearheaded project X which optimized internal workflows.</li>
+                    <li>Collaborated with design and development teams to launch Y.</li>
+                    <li>[Insert key achievements extracted from LinkedIn experience section]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h3>Visual Narrative</h3>
+            <p>
+                <i>A curated glimpse into creative projects and personal branding, sourced from <a href="https://www.instagram.com/komallly/" style="color: var(--sunset-orange); text-decoration: none;">@komallly</a>.</i>
+            </p>
+            <div style="background: var(--blush-pink); padding: 20px; border-radius: 8px; text-align: center; color: var(--earthy-brown); font-weight: bold;">
+                [Instagram Grid / Visual Portfolio Placeholder]
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Komal Mann. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
