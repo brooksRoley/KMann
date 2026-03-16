@@ -6,14 +6,14 @@
     <meta name="description" content="Komal Mann, MBA - Healthcare Coordinator Portfolio">
     <title>Komal Mann, MBA | Healthcare Coordinator</title>
     <style>
-        /* UXR Optimized Color Palette & Typography */
+        /* Spring Pastel Color Palette & Typography */
         :root {
-            --earthy-brown: #3b2c25;
-            --dark-gray: #4a4543;
-            --warm-gray: #f4f1ee;
-            --deep-maroon: #7c2a31;
-            --sunset-orange: #d96c4a;
-            --blush-pink: #e5989b;
+            --earthy-brown: #4a5568;
+            --dark-gray: #5a6a7a;
+            --warm-gray: #f0f7f4;
+            --deep-maroon: #7ab89c;
+            --sunset-orange: #c9a9d4;
+            --blush-pink: #f4c2c2;
         }
 
         * {
@@ -41,6 +41,25 @@
             border-bottom: 3px solid var(--blush-pink);
             padding-bottom: 30px;
             margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--blush-pink);
+            box-shadow: 0 4px 12px rgba(122, 184, 156, 0.2);
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 200px;
         }
 
         h1 {
@@ -75,7 +94,7 @@
             color: #fff;
             background-color: var(--deep-maroon);
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 25px;
             font-weight: 600;
             font-size: 0.9rem;
             transition: background-color 0.3s ease, transform 0.2s ease;
@@ -122,18 +141,18 @@
             font-style: italic;
             color: var(--deep-maroon);
             border-radius: 0 8px 8px 0;
-            box-shadow: 0 2px 4px rgba(59, 44, 37, 0.05);
+            box-shadow: 0 2px 8px rgba(122, 184, 156, 0.1);
         }
 
         /* List Items (Experience, Education) */
         .list-item {
             background: #fff;
             padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(59, 44, 37, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(122, 184, 156, 0.1);
             margin-bottom: 20px;
             border-left: 4px solid var(--blush-pink);
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, border-left-color 0.2s ease;
         }
 
         .list-item:hover {
@@ -163,7 +182,7 @@
         footer {
             text-align: center;
             padding-top: 40px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid var(--blush-pink);
             color: var(--dark-gray);
             font-size: 0.9rem;
             margin-bottom: 40px;
@@ -174,12 +193,15 @@
 
     <div class="container">
         <header>
-            <h1>Komal Mann, MBA</h1>
-            <h2>Healthcare Coordinator</h2>
-            <span class="location">San Francisco Bay Area</span>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/komann/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://www.instagram.com/komallly/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <img src="https://scontent-lax3-1.cdninstagram.com/v/t51.2885-19/468413120_895728039298497_250227704706236518_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEttfsquWxdIlVD1E8G8Ksedc3HgPrgsiWiRGO8bZ1Q5X1xKTCnTFbrYb1lwBaHYChjCmYw6cLBbxwGsfeqUjcX&_nc_ohc=m6JXy32oSJQQ7kNvwEJ5BK2&_nc_gid=PfP93aZyCxhGIw6kl7F02g&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfwPX13qVX11Ey8vLCbzEjGz2dMOrqAAbpWk0sKp9PZ0vQ&oe=69BD0363&_nc_sid=8b3546" alt="Komal Mann" class="header-photo">
+            <div class="header-text">
+                <h1>Komal Mann, MBA</h1>
+                <h2>Healthcare Coordinator</h2>
+                <span class="location">San Francisco Bay Area</span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/komann/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.instagram.com/komallly/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
             </div>
         </header>
 
